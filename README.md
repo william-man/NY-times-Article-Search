@@ -21,6 +21,8 @@ This project was originally intended to help me get more comfortable working wit
 
 The problems I needed to deal with are:
 
-1.
+1. needed webpack to use require;
+2. hiding api_key
+3. deployment on heroku
 
 ### Improvements
