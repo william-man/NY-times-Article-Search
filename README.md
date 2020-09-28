@@ -21,8 +21,12 @@ This project was originally intended to help me get more comfortable working wit
 
 The problems I needed to deal with are:
 
-1. needed webpack to use require;
-2. hiding api_key
-3. deployment on heroku
+1.  `require()` not defined on the browser/client-side javascript.
+2. API key not revealed in the browser.
+3. Deployment on heroku.
+
+To solve the first problem, I needed to find a way to enable `require()` on the browser so I decided to use webpack which generates a bundle by mapping all dependencies my project needs. At the same time, since JSX is not supported in browsers, webpack allowed me to create a configuration file to use babel and compile JSX into backwards compatible javascript for older browsers.
+
+For the second problem, to hide the api key, I decided to have the server handle the search requests and then send the results forward to the client so that the key will not be revealed in the browser.
 
 ### Improvements
