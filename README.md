@@ -27,6 +27,6 @@ The problems I needed to deal with are:
 
 To solve the first problem, I needed to find a way to enable `require()` on the browser so I decided to use webpack which generates a bundle by mapping all dependencies my project needs. At the same time, since JSX is not supported in browsers, webpack allowed me to create a configuration file to use babel and compile JSX into backwards compatible javascript for older browsers.
 
-For the second problem, to hide the api key, I decided to have the server handle the search requests and then send the results forward to the client so that the key will not be revealed in the browser.
+For the second problem, to hide the api key, I decided to have the server handle the search requests and then send the results forward to the client so that the key will not be revealed in the browser. To do this, I used the Express framework to help me handle the routes and requests for the app as well as to deploy the project on heroku.
 
 ### Improvements
